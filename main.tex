@@ -1,0 +1,65 @@
+\documentclass[9pt,a4paper]{memoir}
+\usepackage{graphicx}
+\usepackage[default,scale=0.95]{opensans}
+\usepackage[T1]{fontenc}
+\setstocksize{58mm}{88mm}
+\setpagecc{55mm}{85mm}{*}
+\settypeblocksize{48mm}{78mm}{*}
+\setulmargins{3mm}{*}{*}
+\setlrmargins{3mm}{*}{*}
+
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+\checkandfixthelayout[fixed]
+\pagestyle{empty}
+\usepackage{wrapfig}
+\usepackage{fontawesome}    
+\usepackage{color}
+\definecolor{zzu-red}{RGB}{146,48,43}
+
+\usepackage{lipsum,xcolor}
+\newcommand\dunderline[3][-1pt]{{%
+  \sbox0{#3}%
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+\begin{document}
+\noindent
+\begin{minipage}[c]{0.4\linewidth}
+  \includegraphics[keepaspectratio,width=\textwidth]{zzu.pdf}
+\end{minipage}  \hfill
+\begin{minipage}[c]{0.58\linewidth}
+    \begin{raggedright}
+      \large{\selectfont \textcolor{zzu-red}{\dunderline{1pt}{\textbf{School of Management}}}} \end{raggedright}
+      
+      \begin{raggedright}
+     \scriptsize	{ \selectfont \textcolor{zzu-red}	{\textbf{Computer \& Industrial Engineering Group}}}
+    \end{raggedright}
+\end{minipage}
+%\begin{Spacing}{1}
+  %\hspace*{-\parindent}%
+  
+\vspace{4mm}
+  \begin{minipage}[c]{\textwidth}
+    %\begin{raggedright}
+    \begin{wrapfigure}{r}{0.2\textwidth}
+  \includegraphics[width = 0.2\textwidth]{zhou.jpg}
+  \end{wrapfigure}
+    \LARGE{ {Yanjie Zhou}} $\vert$ \footnotesize{Associate Professor}  \vspace{2mm} \\
+    \faGraduationCap \footnotesize{Doctor of Philosophy}  \\
+    \faInstitution Dep. of Logistics\\
+    \faInstitution Dep. of Data Science \& Intelligence Management\\
+    \faInstitution Intelligent Logistics \& Traffic Management Institute\\
+   {\faEnvelope}  \footnotesize{ieyjzhou@zzu.edu.cn} \\
+     {\faGlobe}   \footnotesize{https://ieyjzhou.github.io}\\  
+ % \faInternetExplorer  
+ {\faGlobe} \footnotesize{https://ieyjzhou.github.io/lab} 
+   
+ %  \end{raggedright}
+     
+  \end{minipage}
+        
+%\end{Spacing}
+\begin{center} %\faMapMarker
+ \faMap  \footnotesize{ No.100 Science Avenue, Zhengzhou City, Henan Province P.R.China.}
+
+\end{center}
+\end{document}
